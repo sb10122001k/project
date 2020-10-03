@@ -14,5 +14,6 @@ public class MainActivity extends AppCompatActivity {
         VideoView vid = (VideoView) findViewById(R.id.videoView);
         vid.setVideoPath("android.resources//" + getPackageName() +"/" +R.raw.demovideo);
         vid.start();
+        vid.stopPlayback();
     }
 }
